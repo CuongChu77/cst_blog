@@ -6,7 +6,7 @@ export default siteConfig({
   // -------------------------------------------------------------------------
 
   // ID của trang Notion gốc (Hãy đảm bảo đây là ID trang của BẠN)
-  rootNotionPageId: '7875426197cf461698809def95960ebf',
+  rootNotionPageId: '2ef1622a5c1981e49e51f2f23380e9b3',
 
   // Để null
   rootNotionSpaceId: null,
