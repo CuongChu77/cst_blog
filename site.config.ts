@@ -1,5 +1,19 @@
 import { siteConfig } from './lib/site-config'
+export default siteConfig({
+  // Tên hiển thị trên Tab trình duyệt
+  name: 'CST Marine', 
 
+  // Tên miền chính thức (QUAN TRỌNG)
+  domain: 'cst.vn',
+
+  // Tác giả
+  author: 'CST Team', // Hoặc tên bạn
+
+  // Mô tả này sẽ hiện khi chia sẻ link lên Facebook/Zalo
+  description: 'Chuyên trang thu thập và phân tích tin tức về khoa học và công nghệ bảo tồn đa dạng sinh học biển.',
+
+  // ... các phần khác giữ nguyên
+})
 export default siteConfig({
   // the site's root Notion page (required)
   rootNotionPageId: '7875426197cf461698809def95960ebf',
