@@ -1,20 +1,5 @@
 import { siteConfig } from './lib/site-config'
 export default siteConfig({
-  // Tên hiển thị trên Tab trình duyệt
-  name: 'CST Marine', 
-
-  // Tên miền chính thức (QUAN TRỌNG)
-  domain: 'cst.vn',
-
-  // Tác giả
-  author: 'CST Team', // Hoặc tên bạn
-
-  // Mô tả này sẽ hiện khi chia sẻ link lên Facebook/Zalo
-  description: 'Chuyên trang thu thập và phân tích tin tức về khoa học và công nghệ bảo tồn đa dạng sinh học biển.',
-
-  // ... các phần khác giữ nguyên
-})
-export default siteConfig({
   // the site's root Notion page (required)
   rootNotionPageId: '7875426197cf461698809def95960ebf',
 
@@ -23,17 +8,15 @@ export default siteConfig({
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: 'Next.js Notion Starter Kit',
-  domain: 'nextjs-notion-starter-kit.transitivebullsh.it',
-  author: 'Travis Fischer',
+    // Tên hiển thị trên Tab trình duyệt
+  name: 'CST Marine', 
+  // Tên miền chính thức (QUAN TRỌNG)
+  domain: 'cst.vn',
+  // Tác giả
+  author: 'CST Team', // Hoặc tên bạn
+  // Mô tả này sẽ hiện khi chia sẻ link lên Facebook/Zalo
+  description: 'Chuyên trang thu thập và phân tích tin tức về khoa học và công nghệ bảo tồn đa dạng sinh học biển.',
 
-  // open graph metadata (optional)
-  description: 'Example Next.js Notion Starter Kit Site',
-
-  // social usernames (optional)
-  twitter: 'transitive_bs',
-  github: 'transitive-bullshit',
-  linkedin: 'fisch2',
   // mastodon: '#', // optional mastodon profile URL, provides link verification
   // newsletter: '#', // optional newsletter URL
   // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
