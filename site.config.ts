@@ -1,53 +1,56 @@
 import { siteConfig } from './lib/site-config'
+
 export default siteConfig({
-  // the site's root Notion page (required)
+  // -------------------------------------------------------------------------
+  // CẤU HÌNH CHÍNH (QUAN TRỌNG NHẤT)
+  // -------------------------------------------------------------------------
+
+  // ID của trang Notion gốc (Hãy đảm bảo đây là ID trang của BẠN)
   rootNotionPageId: '7875426197cf461698809def95960ebf',
 
-  // if you want to restrict pages to a single notion workspace (optional)
-  // (this should be a Notion ID; see the docs for how to extract this)
+  // Để null
   rootNotionSpaceId: null,
 
-  // basic site info (required)
-    // Tên hiển thị trên Tab trình duyệt
-  name: 'CST Marine', 
-  // Tên miền chính thức (QUAN TRỌNG)
+  // Thông tin website
+  name: 'CST Marine',
   domain: 'cst.vn',
-  // Tác giả
-  author: 'CST Team', // Hoặc tên bạn
-  // Mô tả này sẽ hiện khi chia sẻ link lên Facebook/Zalo
+  author: 'CST Team',
   description: 'Chuyên trang thu thập và phân tích tin tức về khoa học và công nghệ bảo tồn đa dạng sinh học biển.',
 
-  // mastodon: '#', // optional mastodon profile URL, provides link verification
-  // newsletter: '#', // optional newsletter URL
-  // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
+  // -------------------------------------------------------------------------
+  // MẠNG XÃ HỘI (Nếu không có thì để null, đừng xóa dòng)
+  // -------------------------------------------------------------------------
+  twitter: null,
+  github: null,
+  linkedin: null,
+  // mastodon: '#', 
+  // newsletter: '#',
+  // youtube: '#',
 
-  // default notion icon and cover images for site-wide consistency (optional)
-  // page-specific values will override these site-wide defaults
+  // -------------------------------------------------------------------------
+  // CẤU HÌNH HÌNH ẢNH & GIAO DIỆN
+  // -------------------------------------------------------------------------
+  
+  // Icon và Cover mặc định (để null sẽ lấy từ Notion)
   defaultPageIcon: null,
   defaultPageCover: null,
   defaultPageCoverPosition: 0.5,
 
-  // whether or not to enable support for LQIP preview images (optional)
+  // Hỗ trợ ảnh xem trước mờ (Low Quality Image Placeholder) - Nên để true cho đẹp
   isPreviewImageSupportEnabled: true,
 
-  // whether or not redis is enabled for caching generated preview images (optional)
-  // NOTE: if you enable redis, you need to set the `REDIS_HOST` and `REDIS_PASSWORD`
-  // environment variables. see the readme for more info
+  // Caching (Không cần bật nếu dùng Vercel miễn phí cơ bản)
   isRedisEnabled: false,
 
-  // map of notion page IDs to URL paths (optional)
-  // any pages defined here will override their default URL paths
-  // example:
-  //
-  // pageUrlOverrides: {
-  //   '/foo': '067dd719a912471ea9a3ac10710e7fdf',
-  //   '/bar': '0be6efce9daf42688f65c76b89f8eb27'
-  // }
+  // Ghi đè đường dẫn (để null)
   pageUrlOverrides: null,
 
-  // whether to use the default notion navigation style or a custom one with links to
-  // important pages. To use `navigationLinks`, set `navigationStyle` to `custom`.
+  // Kiểu thanh điều hướng (Menu)
+  // 'default': Chỉ hiện ô tìm kiếm và tên
+  // 'custom': Hiện thêm các link About, Contact... (cần cấu hình thêm bên dưới)
   navigationStyle: 'default'
+  
+  // Ví dụ nếu muốn dùng custom menu sau này:
   // navigationStyle: 'custom',
   // navigationLinks: [
   //   {
